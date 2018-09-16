@@ -17,31 +17,28 @@
     <nav id="ui-toolbar">
         <ul class="toolbar-content">
             <li>
-                <a href="#nobodycares">
-                    <div class="list-content list-content-name">
-                        <div>Brandon Grissom</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div class="list-content">
-                    <div>About</div>
+                <div onclick="window.smoothScrollTo('#portrait')" class="list-content list-content-name">
+                    BRANDON GRISSOM
                 </div>
             </li>
             <li>
-                <div class="list-content" id="test">
-                    <div>Experience</div>
+                <div onclick="window.smoothScrollTo('#about')" class="list-content">
+                    About
                 </div>
             </li>
             <li>
-                <div class="list-content">
-                    <div>Contact</div>
+                <div onclick="window.smoothScrollTo('#experience')" class="list-content" id="test">
+                    Experience
+                </div>
+            </li>
+            <li>
+                <div onclick="window.smoothScrollTo('#contact')" class="list-content">
+                    Contact
                 </div>
             </li>
         </ul>
     </nav>
-
-    <section class="contentSection bkg-primary font-primary">
+    <section id="portrait" class="contentSection bkg-primary font-primary">
         <div class="sectionContent">
             <div class="center"><img class="profile" src="img/face-cropped.jpg" alt="">
                 <br>
@@ -49,32 +46,34 @@
                 <span>Doin' Web Stuff</span>
                 <h1 class="inline">”</h1>
             </div>
-            <!-- <div class="divider"></div> -->
-            <h1 class="contentBanner contentBanner-right-dark">Aboot</h1>
+            <h1 id="about" class="contentBanner contentBanner-right-dark">Aboot</h1>
             <p>A bunch of random stuff goes in here and all that jazz.</p>
         </div>
     </section>
 
     <section class="contentSection contentExperience bkg-secondary font-secondary">
         <div class="sectionContent">
-            <h1 class="contentBanner contentBannerLight contentBanner-right">EXPERIENCE</h1>
+            <h1 id="experience" class="contentBanner contentBannerLight contentBanner-right">EXPERIENCE</h1>
             <p class="font-secondary">Delivering professional <em>solutions</em> in demanding environments.
                 I've worked with companies to launch new products including social
                 networks, content development software and mobile applications.</p>
             <p class="font-secondary">When it comes to finding the right person for your business nothing makes a
                 difference like having experienced and reliable people that you can trust do deliver real results.
                 That's why you should always strive for the best and I settle for nothing less than my best.</p>
-            <p class="font-secondary">I enjoy working in fast paced environments with constant feedback both about what
+            <p class="font-secondary">I enjoy working in fast paced environments with constant feedback both about
+                what
                 is working and, more
                 importantly, what <em>isn't</em> working. I believe you always learn more and grow faster by
                 knowing your
                 weaknesses more than your strengths.</p>
 
             <h2 class="contentBanner contentBannerLight contentBanner-left">USING</h2>
-            <p class="align-right font-secondary">The latest technology and services to <em>accomplish</em> goals that
+            <p class="align-right font-secondary">The latest technology and services to <em>accomplish</em> goals
+                that
                 add value to the business is crucial to success.</p>
             <h2 class="contentBanner contentBannerLight contentBanner-right">REACT</h2>
-            <p class="font-secondary">To inevitable shifts in the industry and technology with professional development
+            <p class="font-secondary">To inevitable shifts in the industry and technology with professional
+                development
                 best practices.</p>
             <div class="divider"></div>
             <div class="center">
@@ -86,13 +85,14 @@
 
     <section class="contentSection bkg-primary font-primary">
         <div class="sectionContent">
-            <h1 class="contentBanner contentBanner-right-dark">Contact</h1>
+            <h1 id="contact" class="contentBanner contentBanner-right-dark">Contact</h1>
             <p>Me via email at lousaydus@gmail.com or reach out through the intertubes at 208-964-4410</p>
         </div>
     </section>
 
     <div class="footer">
-        <div class="footer-content">Wow you really scrolled all the way down here to the bottom? Don't you have better
+        <div class="footer-content">Wow you really scrolled all the way down here to the bottom? Don't you have
+            better
             things to do?</div>
 
         <div class="footer-content"><i class="fa fa-github-square fa-5x"></i>

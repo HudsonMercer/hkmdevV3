@@ -1,7 +1,12 @@
-window.onload = function() {
-  console.log('TEST')
+function smoothScrollTo(target) {
+  // console.log('test')
 
-  function doAlert(){
-      window.alert('TEST')
+  if (Element.prototype.scrollIntoView) {
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  } else {
+    document.querySelector(target).scrollTo()
   }
 }
